@@ -16,3 +16,150 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.search-form input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
+  width: 272px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.search-form input:hover {
+  border-color: #000000;
+  background-color: #f9f9f9;
+}
+
+.search-form input:focus {
+  border-color: #4e75ff;
+  background-color: #fff;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  width: 91px;
+  height: 40px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: #6c8cff;
+}
+
+.loader {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.gallery-item {
+  border: 1px solid #808080;
+  overflow: hidden;
+  background: white;
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 152px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 152px;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  background: #f8f9fa;
+  width: 100%;
+  height: 48px;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-item b {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info-item span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.load-more {
+  display: block;
+  width: 125px;
+  height: 40px;
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background: #6c8cff;
+}
