@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+    <script type="module" crossorigin src="/goit-js-hw-12/01-page.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-BkVuWn-o.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/styles-FH--fUF2.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <svg class="nav-logo-icon" width="100" height="30">
+          <use href="/goit-js-hw-12/assets/sprite-E8vg0sBb.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link active" href="./01-page.html">Page 1</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <div class="container">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="gallery"></div>
+
+        <button type="button" class="load-more" style="display: none">
+          Load more
+        </button>
+
+        <div class="loader" style="display: none">
+          Loading images, please wait...
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://goit.global/ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT team
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
